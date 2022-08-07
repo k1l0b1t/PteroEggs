@@ -1,4 +1,4 @@
-FROM debian:10
+FROM debian:11
 
 # Install dependencies
 RUN apt update \
@@ -19,7 +19,7 @@ ENV LC_ALL en_US.UTF-8
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
     && apt -y install nodejs
 RUN apt -y install python python3 python3-pip
-RUN apt -y install openjdk-11-jdk
+RUN apt -y install openjdk-17-jdk
 RUN apt -y install golang
 RUN apt -y install mono-runtime
 RUN apt -y install lua5.3
