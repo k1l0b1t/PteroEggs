@@ -5,13 +5,12 @@
         "update_url": null
     },
     "exported_at": "2021-03-02T17:31:16+01:00",
-    "name": "OpenJRegg",
-    "author": "thijs773@xs4all.nl",
-    "description": "OpenJR version of the Jederu Discord bot egg. Supports node.js, python 2 and 3, OpenJDK 11, .NET, C#, Lua 5.3, Golang and Elixir.",
+    "name": "General Purpose Bot Egg",
+    "author": "vincent@lamdev.be",
+    "description": "General purpose bot egg. Supports node.js, python 3, OpenJDK 17, .NET, C#, Lua 5.3, Golang and Elixir.",
     "features": null,
     "images": [
-        "thijs773\/openjregg:latest",
-        "thijs773\/openjregg:beta"
+        "vlammens\/pterodactyl-bot-egg:20220807"
     ],
     "file_denylist": "",
     "startup": "${RUNCMD}",
@@ -36,7 +35,7 @@
             "default_value": "\/bin\/bash",
             "user_viewable": true,
             "user_editable": true,
-            "rules": "required|string|max:20"
+            "rules": "required|string|max:255"
         }
     ]
 }
